@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #231f20; /* Dark background color for the body */
+    color: #f7f7ef; /* Light color text to contrast against dark background */
+    min-height: 100vh; /* Ensure the body fills the screen */
+    display: flex;
+    flex-direction: column; /* Allow footer to stick to the bottom */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White header background */
+    border-bottom: 1px solid #f7f7ef; /* Light border between header and body */
+}
+
+/* Logo styling */
+.logo h1 {
+    font-size: 2rem;
+    color: #231f20; /* Dark color for the logo text */
+}
+
+/* Navigation menu styling */
+nav {
+    background-color: #f7f7ef; /* Light color for the navigation menu background */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative; /* Needed for the underline effect */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #231f20; /* Dark color text for navigation links */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: inline-block;
+    padding-bottom: 5px; /* Space for the line */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #231f20; /* Dark color for the underline */
+    transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Line will expand to full width */
+}
+
+/* Footer styling */
+footer {
+    background-color: #231f20; /* Dark background for the footer */
+    color: #f7f7ef; /* Light text color for the footer */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the footer horizontally */
+    width: 100%;
+    font-size: 1rem;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Franchise Section */
+.franchise-intro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button styling for the 'Own Franchise' button */
+#own-franchise-btn {
+    background-color: #231f20;
+    color: #f7f7ef;
+    border: 2px solid #f7f7ef;
+    padding: 12px 25px; /* Reduced padding */
+    font-size: 1rem; /* Smaller font size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+#own-franchise-btn:hover {
+    background-color: #f7f7ef;
+    color: #231f20;
+}
+
+/* Hidden section for the franchise details */
+.hidden {
+    display: none;
+}
+
+/* General Styling for Form */
+#franchise-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#franchise-form label,
+#franchise-form input,
+#franchise-form button {
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+}
+
+#franchise-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #f7f7ef;
+    background-color: #231f20;
+    color: #f7f7ef;
+}
+
+#franchise-form button {
+    background-color: #231f20;
+    color: #f7f7ef;
+    border: 2px solid #f7f7ef;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#franchise-form button:hover {
+    background-color: #f7f7ef;
+    color: #231f20;
+}
